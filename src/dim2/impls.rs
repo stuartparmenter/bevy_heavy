@@ -1,12 +1,9 @@
 use super::{ComputeMassProperties2d, MassProperties2d};
-use bevy_math::{
-    ops,
-    primitives::{
-        Annulus, Arc2d, Capsule2d, Circle, CircularSector, CircularSegment, ConvexPolygon, Ellipse,
-        Line2d, Measured2d, Plane2d, Polyline2d, Rectangle, RegularPolygon, Rhombus, Segment2d,
-        Triangle2d,
-    },
-    FloatPow, Vec2,
+use bevy_math::{ops, FloatPow, Vec2};
+use bevy_shape::{
+    Annulus, Arc2d, Capsule2d, Circle, CircularSector, CircularSegment, ConvexPolygon, Ellipse,
+    Line2d, Measured2d, Plane2d, Polyline2d, Rectangle, RegularPolygon, Rhombus, Segment2d,
+    Triangle2d,
 };
 
 impl ComputeMassProperties2d for Circle {
@@ -472,7 +469,7 @@ mod tests {
     use alloc::vec::Vec;
 
     use approx::assert_relative_eq;
-    use bevy_math::ShapeSample;
+    use bevy_shape::ShapeSample;
     use rand::SeedableRng;
 
     use super::*;

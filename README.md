@@ -26,7 +26,8 @@ and `center_of_mass` methods:
 
 ```rust
 use bevy_heavy::{ComputeMassProperties2d, MassProperties2d};
-use bevy_math::{primitives::Rectangle, Vec2};
+use bevy_math::Vec2;
+use bevy_shape::Rectangle;
 
 let rectangle = Rectangle::new(2.0, 1.0);
 let density = 2.0;
