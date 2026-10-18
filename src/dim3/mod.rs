@@ -491,7 +491,7 @@ impl approx::UlpsEq for MassProperties3d {
 #[cfg(test)]
 mod tests {
     use alloc::vec;
-    use bevy_math::primitives::Cuboid;
+    use bevy_shape::Cuboid;
 
     use super::*;
 
